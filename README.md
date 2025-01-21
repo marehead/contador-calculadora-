@@ -109,3 +109,30 @@ programa {
  
   }
 }
+
+programa 
+  {
+    //EXEMPLO DE CONTADOR 
+    
+    funcao inicio()
+    {
+
+    inteiro totalDeNotas, contador = 1, somaDasNotas = 0
+
+    escreva("informe o total de notas para cada média: ")
+    leia(totalDeNotas)
+
+    enquanto(contador <= totalDeNotas) 
+    {
+      inteiro notaAtual
+      escreva("Qual a ", contador, "º nota")
+      leia(notaAtual)
+      somaDasNotas = somaDasNotas + notaAtual
+      contador++
+    }
+
+    escreva("\nMédia: ", somaDasNotas / totalDeNotas)
+    
+  }
+}
+
