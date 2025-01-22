@@ -29,30 +29,25 @@ programa {
 }
 }
 -----------------------------------
-programa {
-  funcao inicio() 
+//TABUADA
+programa 
 {
-    //TABUADA DE UM NÚMERO QUALQUER 
-    programa {
-  funcao inicio() 
+  inteiro contador = 1
+  inteiro numero
+  funcao inicio()
   {
-    inteiro numero = 0
-    inteiro contador = 100
-
     escreva("informe um número inteiro para exibir sua multiplicação")
-    leia(numero)
+leia(numero)
 
-    escreva("\nResultado: \n")
+enquanto(contador <= 10)
+{
+  escreva(contador, " X ", numero, ": ", numero*contador, "\n")
+  contador++
+} 
 
-    enquanto(contador <= 10)
-    {
-      escreva(contador, " X ", numero, ": ")
-      escreva(contador * numero, "\n")
-      contador = contador + 1
-    } 
+escreva("Fim") 
 
-    escreva("Fim")  
-  }
+}
 }
 
 //calculadora
